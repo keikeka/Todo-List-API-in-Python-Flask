@@ -1,63 +1,32 @@
-# Todo List API in Python Flask
+<p>
+<h4 align="center">4Geeks Academy</h4>
+<h2 align="center" style="margin: 0">Todo List API in Python Flask</h2>
+<h3 align="center" style="margin-top: 0">Keili Rosales</h3>
+</p>
 
-<a href="https://www.breatheco.de"><img height="280" align="right" src="https://raw.githubusercontent.com/breatheco-de/python-flask-api-tutorial/3ffb90ea974146f57a3bdfd59665b4c4d5d05197/.breathecode/assets/badge.svg"></a>
+## Objective
 
-This is an interactive tutorial that will teach you how to create an API using the Python Flask framework using Python and Pipenv.
+The objective of this project is to build a Rest API starting from an interactive exercise where 3 endpoints must be exposed to the Internet.
 
-## 🌱  How to start this project
+Methods to be used to create a TODO list:
+`GET /all`
+`POST /all`
+`DELETE /all/<int:position>`
 
-This project comes with the necessary files to start working, but you have two options to start:
+## Application
 
-a) Open this link in your browser to clone it with gitpod: https://gitpod.io#https://github.com/breatheco-de/python-flask-api-tutorial
+1. You must follow the instructions shown in the 4Geeks Learnpack.
+2. Check each test and enjoy this API.
 
-b) You can clone this repository on your local computer:
-```sh
-$ git clone https://github.com/breatheco-de/python-flask-api-tutorial
-```
-💡 Important: Remember to create a new repository, update the remote (`git remote set-url origin <your new url>`), and upload the code to your new repository using `add`, `commit` and `push`.
+## Technologies
 
+- SQLAlchemy
+- Flask
+- Python
+- 4Geeks Interactive Learnpack
 
-## About the project we are going to build
+## Contributions
 
-In this tutorial we are going to be building a REST API that exposes 3 endpoints to the internet:
+I'd love to get your appreciation or report on the code at https://github.com/keikeka/Todo-List-API-in-Python-Flask
 
-```txt
-GET /todos
-POST /todos
-DELETE /todos/<int:position>
-```
-
-### GET /todos
-
-Will return the list of all todos like this:
-
-```javascript
-[
-    {
-        "done": true,
-        "label": "Sample Todo 1"
-    },
-    {
-        "done": true,
-        "label": "Sample Todo 2"
-    }
-]
-```
-
-### POST /todos
-
-It's going to add a new todo to the list, it will receive the following request body:
-
-```javascript
-{
-    "done": true,
-    "label": "Sample Todo 1"
-}
-```
-
-And return the updated list of todos.
-
-### DELETE /todos/<int:position>
-
-It's going to remove one todo based on a given position at the end of the url, and return the updated list of todos.
-
+Thank you so much!
